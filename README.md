@@ -18,7 +18,8 @@
 📸 **Preview:**
 
 <p align="center">
-  <img src="Screenshot1.png" width="700" alt="Interactive Task Manager Preview"/>
+  <img src="Screenshot12.png" width="700" alt="FreshBite Restaurant Website Preview"/>
+  <img src="Screenshot1.jpeg" width="700" alt="FreshBite Restaurant Website Preview"/>
 </p> 
 
 ---
