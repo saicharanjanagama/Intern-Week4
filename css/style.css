@@ -181,7 +181,7 @@ footer {
         cursor: pointer;
         position: absolute;
         right: 25px;
-        top: 15px;
+        /* top: ; */
         font-size: 30px;
     }
 }
@@ -199,7 +199,7 @@ footer {
 
     .menu-btn {
         right: 20px;
-        font-size: 30px;
+        font-size: 50px;
     }
 
     header {
