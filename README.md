@@ -13,7 +13,7 @@
 ---
 
 ## 🚀 Live Demo
-🔗 **View Project:** [📝 Interactive Task Manager (Week 3 Project)](https://saicharanjanagama.github.io/Intern-Week3/)
+🔗 **View Project:** [🍽️ FreshBite Restaurant Website (Week 4 Project)](https://saicharanjanagama.github.io/Intern-Week4/)
 
 📸 **Preview:**
 
