@@ -19,7 +19,7 @@
 
 <p align="center">
   <img src="Screenshot2.png" width="500" alt="FreshBite Restaurant Website Preview"/>
-  <img src="sreenshot1.jpeg" width="250" alt="FreshBite Restaurant Website Preview"/>
+  <img src="sreenshot1.jpeg" width="150" alt="FreshBite Restaurant Website Preview"/>
 </p> 
 
 ---
