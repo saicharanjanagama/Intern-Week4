@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
+    color: #333;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: tomato;
+    color: white;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+}
+
+/* Section Style */
+section {
+    padding: 60px 20px;
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 20px;
+    padding-top: 250px;
+    text-align: center;
+    color: white;
+    background: url(../images/background.jpg) no-repeat center/cover;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: tomato;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Services */
+.services h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Menu */
+.menu h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    padding: 20px;
+    background: #fff5f2;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ffd4c8;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Contact */
+.contact {
+    background: #ffe9e5;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 30px;
+    margin-bottom: 20px
+}
+
+/* Footer */
+footer {
+    background: tomato;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile Responsive */
+@media(max-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0;
+        right: -240px;
+        width: 240px;
+        height: 100vh;
+        background: tomato;
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+        transition: 0.4s ease;
+        text-align: center;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav a {
+        margin: 15px 0;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 25px;
+        top: 15px;
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 400px) {
+    nav {
+        width: 200px;
+        right: -200px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .menu-btn {
+        right: 20px;
+        font-size: 26px;
+    }
+
+    header {
+        padding: 10px 15px;
+    }
+
+    section {
+        padding-top: 80px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 14px;
+    }
+
+    .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}

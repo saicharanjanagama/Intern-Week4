@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpg" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBite Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="logo">FreshBite</div>
+
+        <nav id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <h1>Delicious Food, Served Fresh</h1>
+        <p>Your favorite meals delivered to your doorstep.</p>
+        <a href="#menu" class="btn">Order Now</a>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+
+        <div class="grid-3">
+            <div class="card">
+                <img src="images/Dine-In.jpg" alt="">
+                <h3>Dine-In</h3>
+                <p>Comfortable seating and a family-friendly atmosphere.</p>
+            </div>
+            <div class="card">
+                <img src="images/Fast Delivery.jpg" alt="">
+                <h3>Fast Delivery</h3>
+                <p>Get fresh food delivered quickly to your location.</p>
+            </div>
+            <div class="card">
+                <img src="images/Online Orders.jpg" alt="">
+                <h3>Online Orders</h3>
+                <p>Order anytime from our website or app.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu">
+        <h2>Popular Dishes</h2>
+
+        <div class="grid-4">
+            <div class="menu-item">
+                <img src="images/Veg Burger.jpg" alt="">
+                <h3>Veg Burger</h3>
+                <p>₹120</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/Grilled Chicken.jpg" alt="">
+                <h3>Grilled Chicken</h3>
+                <p>₹250</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/Panner Tikka.jpg" alt="">
+                <h3>Panner Tikka</h3>
+                <p>₹180</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/Pasta Alfredo.jpg" alt="">
+                <h3>Pasta Alfredo</h3>
+                <p>₹200</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Hyderabad, India</p>
+        <p>📞 +91 98653 21548</p>
+        <p>📧 support@freshbite.in</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 FreshBite Restaurant. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+
+        document.querySelectorAll("nav a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+            });
+        }); //This makes menu close after tapping a link on mobile
+    </script>
+</html>
